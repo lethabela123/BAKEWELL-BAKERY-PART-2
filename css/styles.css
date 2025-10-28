@@ -87,4 +87,152 @@
     border-radius: 0%;
   }
   
-  
+  /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f3;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #ffb347;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #4b2e05;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+/* Hero Card Style */
+.hero-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+  max-width: 800px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+.hero-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid #ffb347;
+}
+
+.hero-text {
+  padding: 2rem;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  color: #4b2e05;
+}
+
+.hero-text p {
+  margin: 1rem 0;
+  color: #666;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background-color: #ffb347;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff9800;
+  transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease-out;
+}
+
+.slide-up {
+  animation: slideUp 1.2s ease-out 0.3s both;
+}
+
+/* Footer */
+footer {
+  background-color: #4b2e05;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-card {
+    margin: 0 1rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+}
