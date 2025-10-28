@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,23 +9,21 @@
   <title>BakeWell Bakery | Products</title>
   
   <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
 <!-- Header section with logo and navigation menu -->
 <header>
   <h1>
-    <!-- Bakery logo -->
     <img src="../assets/WhatsApp Image 2025-08-27 at 09.56.37.jpeg" alt="BakeWell Bakery Logo" width="150" height="150">
     BakeWell Bakery
   </h1>
   <nav>
     <ul>
-      <!-- Navigation links -->
       <li><a href="../index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="products.html" class="active">Products</a></li> <!-- Active page -->
+      <li><a href="products.html" class="active">Products</a></li>
       <li><a href="enquiry.html">Enquiry</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="blog.html">Blog</a></li>
@@ -34,71 +31,84 @@
   </nav>
 </header>
 
-<!-- Main content area -->
 <main>
-  <h2>Our Products</h2>
-  
-  <!-- Container for product rows -->
-  <div class="products-row">
+  <h2 class="page-title">Our Products</h2>
 
-    <!-- Cakes section -->
-    <div class="product-column">
-      <h2>Cakes</h2>
-      <img src="../assets/chocolate.jpeg" alt="Chocolate Cake" width="150" height="100">
-      <p>Chocolate</p>
-      <img src="../assets/vanilla.jpeg" alt="Vanilla Cake" width="150" height="100">
-      <p>Vanilla</p>
-      <img src="../assets/red velvet.jpeg" alt="Red Velvet Cake" width="150" height="100">
-      <p>Red Velvet</p>
-      <img src="../assets/gluten.jpeg" alt="Gluten-Free Cake" width="150" height="100">
-      <p>Gluten-Free</p>
+  <!-- Product Flip Card Container -->
+  <div class="product-section">
+
+    <!-- Cakes -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <h3>Cakes</h3>
+          <div class="product-items">
+            <div><img src="../assets/chocolate.jpeg" alt="Chocolate Cake"><p>Chocolate</p></div>
+            <div><img src="../assets/vanilla.jpeg" alt="Vanilla Cake"><p>Vanilla</p></div>
+            <div><img src="../assets/red velvet.jpeg" alt="Red Velvet Cake"><p>Red Velvet</p></div>
+            <div><img src="../assets/gluten.jpeg" alt="Gluten-Free Cake"><p>Gluten-Free</p></div>
+          </div>
+        </div>
+        <div class="flip-back">
+          <h3>Cakes</h3>
+          <p>Freshly baked daily with premium ingredients. From classic vanilla to indulgent chocolate — every slice brings joy!</p>
+        </div>
+      </div>
     </div>
 
-    <!-- Breads section -->
-    <div class="product-column">
-      <h2>Breads</h2>
-      <img src="../assets/sourdough.jpeg" alt="Sourdough Bread" width="150" height="100">
-      <p>Sourdough</p>
-      <img src="../assets/rye.jpeg" alt="Rye Bread" width="150" height="100">
-      <p>Rye</p>
-      <img src="../assets/wholemeat.jpeg" alt="Wholewheat Bread" width="150" height="100">
-      <p>Wholewheat</p>
-      <img src="../assets/baguette.jpeg" alt="Baguette" width="150" height="100">
-      <p>Baguette</p>
+    <!-- Breads -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <h3>Breads</h3>
+          <div class="product-items">
+            <div><img src="../assets/sourdough.jpeg" alt="Sourdough Bread"><p>Sourdough</p></div>
+            <div><img src="../assets/rye.jpeg" alt="Rye Bread"><p>Rye</p></div>
+            <div><img src="../assets/wholemeat.jpeg" alt="Wholewheat Bread"><p>Wholewheat</p></div>
+            <div><img src="../assets/baguette.jpeg" alt="Baguette"><p>Baguette</p></div>
+          </div>
+        </div>
+        <div class="flip-back">
+          <h3>Breads</h3>
+          <p>Handcrafted loaves made with traditional methods — soft inside, crispy outside, and full of flavor.</p>
+        </div>
+      </div>
     </div>
 
-    <!-- Pastries section -->
-    <div class="product-column">
-      <h2>Pastries</h2>
-      <img src="../assets/croissant.jpg" alt="Croissant" width="150" height="100">
-      <p>Croissant</p>
-      <img src="../assets/danishes.jpeg" alt="Danish Pastry" width="150" height="100">
-      <p>Danishes</p>
-      <img src="../assets/muffins.jpeg" alt="Muffins" width="150" height="100">
-      <p>Muffins</p>
+    <!-- Pastries -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <h3>Pastries</h3>
+          <div class="product-items">
+            <div><img src="../assets/croissant.jpg" alt="Croissant"><p>Croissant</p></div>
+            <div><img src="../assets/danishes.jpeg" alt="Danish Pastry"><p>Danishes</p></div>
+            <div><img src="../assets/muffins.jpeg" alt="Muffins"><p>Muffins</p></div>
+          </div>
+        </div>
+        <div class="flip-back">
+          <h3>Pastries</h3>
+          <p>Buttery, flaky, and irresistible — perfect for your morning coffee or an afternoon treat!</p>
+        </div>
+      </div>
     </div>
 
-    <!-- Health-conscious products section -->
-    <div class="product-column">
-      <h2>Health-Conscious</h2>
-      <img src="../assets/vegan.jpeg" alt="Vegan Cupcake" width="150" height="100">
-      <p>Vegan Cupcake</p>
-      <img src="../assets/keto.jpeg" alt="Keto-Friendly Bread" width="150" height="100">
-      <p>Keto-Friendly</p>
+    <!-- Health-Conscious -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <h3>Health-Conscious</h3>
+          <div class="product-items">
+            <div><img src="../assets/vegan.jpeg" alt="Vegan Cupcake"><p>Vegan Cupcake</p></div>
+            <div><img src="../assets/keto.jpeg" alt="Keto-Friendly Bread"><p>Keto-Friendly</p></div>
+          </div>
+        </div>
+        <div class="flip-back">
+          <h3>Health-Conscious</h3>
+          <p>Wholesome, guilt-free indulgence — vegan, keto, and gluten-free options for every lifestyle.</p>
+        </div>
+      </div>
     </div>
 
   </div>
 </main>
-
-<!-- Footer section -->
-<footer>
-  <p>&copy; 2025 BakeWell Bakery | All Rights Reserved</p>
-</footer>
-
-</body>
-</html>
-
-
-
-
-
