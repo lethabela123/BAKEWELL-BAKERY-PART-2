@@ -4,13 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BakeWell Bakery | About Us</title>
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
 <header>
   <h1>
-    <img src="../assets/WhatsApp Image 2025-08-27 at 09.56.37.jpeg" alt="BakeWell Bakery Logo" style="height:50px; vertical-align:middle;">
+    <img src="../assets/WhatsApp Image 2025-08-27 at 09.56.37.jpeg" alt="BakeWell Bakery Logo" class="logo">
     BakeWell Bakery
   </h1>
   <nav>
@@ -27,6 +32,13 @@
 
 <main>
   <h2>About Us</h2>
+
+  <!-- REAL-TIME CONTENT -->
+  <div class="dynamic-panel">
+    <p id="liveWelcome" class="dynamic-info"></p>
+    <p id="liveTime" class="dynamic-info"></p>
+    <p id="liveFact" class="dynamic-info"></p>
+  </div>
 
   <!-- Card Container -->
   <div class="card-container">
@@ -72,32 +84,53 @@
 
   </div>
 
+  <!-- Staff Gallery -->
   <section>
     <h2>Meet the Team</h2>
     <div class="staff-container">
       <div class="staff-member">
-        <img src="../assets/baker.jpeg" alt="Relebohile Kobela" class="staff-img">
+        <img src="../assets/baker.jpeg" alt="Relebohile Kobela" class="staff-img lightbox-img" data-caption="Relebohile Kobela - Baker">
         <p><strong>Relebohile Kobela</strong><br>Baker</p>
       </div>
       <div class="staff-member">
-        <img src="../Assets/cake decorTOR.jpeg" alt="Phuti Malope" class="staff-img">
+        <img src="../Assets/cake decorTOR.jpeg" alt="Phuti Malope" class="staff-img lightbox-img" data-caption="Phuti Malope - Cake Decorator">
         <p><strong>Phuti Malope</strong><br>Cake Decorator</p>
       </div>
       <div class="staff-member">
-        <img src="../assets/clerk.jpeg" alt="Noko Malatjie" class="staff-img">
+        <img src="../assets/clerk.jpeg" alt="Noko Malatjie" class="staff-img lightbox-img" data-caption="Noko Malatjie - Bakery Clerk">
         <p><strong>Noko Malatjie</strong><br>Bakery Clerk</p>
       </div>
       <div class="staff-member">
-        <img src="../Assets/bakery manager.jpeg" alt="Tlou Phaho" class="staff-img">
+        <img src="../Assets/bakery manager.jpeg" alt="Tlou Phaho" class="staff-img lightbox-img" data-caption="Tlou Phaho - Bakery Manager">
         <p><strong>Tlou Phaho</strong><br>Bakery Manager</p>
       </div>
     </div>
   </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightboxImg">
+    <div id="caption"></div>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+
 </main>
 
 <footer>
-  <p>&copy; 2025 BakeWell Bakery</p>
+  <p>&copy; 2025 BakeWell Bakery | All Rights Reserved</p>
+
+  <!-- Social Media Icons -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com/YourPage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.twitter.com/YourPage" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/YourPage" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/YourPage" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
 </footer>
 
+<script src="../js/javascript.js"></script>
+<script src="../js/lightbox.js"></script>
 </body>
 </html>
